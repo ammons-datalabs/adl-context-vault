@@ -1,0 +1,35 @@
+{
+  "serverName": "my-vault",
+  "categories": ["status", "cost", "date", "contact", "preference"],
+  "tools": {
+    "search_context": {
+      "description": "Search the knowledge base using semantic similarity. Use for questions about past decisions, project context, or anything you've captured."
+    },
+    "lookup_fact": {
+      "description": "Look up a specific fact by key.",
+      "keyExamples": ["project_status", "deploy_date", "team_lead"]
+    },
+    "search_facts": {
+      "description": "Search or list stored facts. Use for 'show me all statuses' or 'what dates do I have?'"
+    },
+    "capture_thought": {
+      "description": "Save a thought, decision, insight, or note. Content is embedded for semantic search and metadata is extracted automatically."
+    },
+    "save_fact": {
+      "description": "Save or update a structured fact. Old values are preserved with timestamps for history.",
+      "keyExamples": ["project_status", "next_milestone_date", "weekly_cost"],
+      "currencies": null,
+      "units": null,
+      "peopleDescription": "People involved or referenced"
+    },
+    "list_recent": {
+      "description": "List the most recently captured thoughts. Useful for reviewing recent activity."
+    },
+    "context_stats": {
+      "description": "Get statistics about the knowledge base: total captures, facts, breakdown by domain, last capture date."
+    },
+    "ingest_document": {
+      "description": "Ingest a file or directory into the knowledge base. Supports PDF, Markdown, and plain text."
+    }
+  }
+}
