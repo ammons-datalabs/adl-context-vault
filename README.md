@@ -1,13 +1,13 @@
 # adl-context-vault
 
-A starter template for your personal context vault. Fork this repo and connect it to [adl-context-collector](https://github.com/ammonsdatalabs/adl-context-collector) to give any MCP-compatible LLM persistent memory about your work, projects, and knowledge.
+A starter template for your personal context vault. Fork this repo and connect it to [adl-context-collector](https://github.com/ammons-datalabs/adl-context-collector) to give any MCP-compatible LLM persistent memory about your work, projects, and knowledge.
 
 ## Setup
 
 ### 1. Fork or clone this repo
 
 ```bash
-git clone https://github.com/ammonsdatalabs/adl-context-vault.git my-vault
+git clone https://github.com/ammons-datalabs/adl-context-vault.git my-vault
 cd my-vault
 ```
 
@@ -17,7 +17,7 @@ cd my-vault
 cp .env.example .env
 ```
 
-Edit `.env` with your database URL and OpenAI API key (or remove the OpenAI key if using Ollama — see the [context-collector docs](https://github.com/ammonsdatalabs/adl-context-collector#local-setup-ollama)).
+Edit `.env` with your database URL and OpenAI API key (or remove the OpenAI key if using Ollama — see the [context-collector docs](https://github.com/ammons-datalabs/adl-context-collector#local-setup-ollama)).
 
 ### 3. Create your database
 
@@ -58,11 +58,11 @@ A vault is a directory where you keep:
 - **`rawdocs/`** — documents to ingest (markdown, PDF, plain text)
 - Whatever else is useful for your context (notes, references, etc.)
 
-The vault doesn't contain any code — it's purely configuration and data. The [context-collector](https://github.com/ammonsdatalabs/adl-context-collector) engine runs separately.
+The vault doesn't contain any code — it's purely configuration and data. The [context-collector](https://github.com/ammons-datalabs/adl-context-collector) engine runs separately.
 
 ## Multiple vaults
 
-You can run multiple vaults (e.g., personal and work) pointing at different databases but sharing the same context-collector installation. Each vault has its own `.env`, config, and MCP server registration. See the [context-collector docs](https://github.com/ammonsdatalabs/adl-context-collector#multiple-vaults) for details.
+You can run multiple vaults (e.g., personal and work) pointing at different databases but sharing the same context-collector installation. Each vault has its own `.env`, config, and MCP server registration. See the [context-collector docs](https://github.com/ammons-datalabs/adl-context-collector#multiple-vaults) for details.
 
 ## Ingesting documents
 
